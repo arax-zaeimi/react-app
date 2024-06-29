@@ -1,19 +1,19 @@
-import ListGroup from "./components/ListGroup";
+import CustomList from "./components/CustomList";
 
 function App() {
   let items = ["BMW", "Audi", "Mercedes", "Toyota", "Honda"];
 
-  const handleSelectItem = (item: string) => {
-    console.log(item);
+  const handleOnSelectItem = (item: string) => {
+    console.log(`Selected item: ${item}`);
   };
 
   return (
     <div>
-      <ListGroup
+      <CustomList
+        onSelectItem={handleOnSelectItem}
         items={items}
         heading="Car Makes"
-        onSelectItem={handleSelectItem}
-      ></ListGroup>
+      ></CustomList>
     </div>
   );
 }
