@@ -1,19 +1,11 @@
-import CustomList from "./components/CustomList";
+import { Alert } from "./components/Alert";
 
 function App() {
-  let items = ["BMW", "Audi", "Mercedes", "Toyota", "Honda"];
-
-  const handleOnSelectItem = (item: string) => {
-    console.log(`Selected item: ${item}`);
-  };
-
   return (
     <div>
-      <CustomList
-        onSelectItem={handleOnSelectItem}
-        items={items}
-        heading="Car Makes"
-      ></CustomList>
+      <Alert>
+        Hello, <span>world!</span>
+      </Alert>
     </div>
   );
 }
