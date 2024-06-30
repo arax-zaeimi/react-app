@@ -1,5 +1,4 @@
-import { Button } from "./components/Button/Button";
-import { Alert } from "./components/Alert";
+import { Like } from "./components/Like";
 import { useState } from "react";
 
 function onClick() {
@@ -9,14 +8,13 @@ function onClick() {
 function App() {
   const [alertVisible, setAlertVisiblity] = useState(false);
 
+  const handleLikeClicked = () => {
+    console.log("like clicked!");
+  };
+
   return (
     <div>
-      {alertVisible && (
-        <Alert onClose={() => setAlertVisiblity(false)}> My alert </Alert>
-      )}
-      <Button color="primary" onClick={() => setAlertVisiblity(true)}>
-        My cool button
-      </Button>
+      <Like onClick={handleLikeClicked}></Like>
     </div>
   );
 }
