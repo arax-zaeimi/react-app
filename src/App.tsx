@@ -1,9 +1,9 @@
-import { FormWithState } from "./components/FormWithState";
+import { FormWithHookForm } from "./components/FormWithHookForm";
 
 function App() {
   return (
     <>
-      <FormWithState></FormWithState>
+      <FormWithHookForm></FormWithHookForm>
     </>
   );
 }
