@@ -3,7 +3,7 @@ import React, { FormEvent, useRef, useState } from "react";
 export const FormWithState = () => {
   const [person, setPerson] = useState({
     name: "",
-    age: "",
+    age: 0,
   });
 
   const handleSubmission = (event: FormEvent) => {
