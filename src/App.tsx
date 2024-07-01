@@ -1,9 +1,9 @@
-import ArrayUpdateWithImmer from "./components/ArrayUpdateWithImmer";
+import { FormWithState } from "./components/FormWithState";
 
 function App() {
   return (
     <>
-      <ArrayUpdateWithImmer></ArrayUpdateWithImmer>
+      <FormWithState></FormWithState>
     </>
   );
 }
